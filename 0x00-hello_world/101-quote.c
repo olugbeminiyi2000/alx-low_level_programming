@@ -2,11 +2,9 @@
 #include <unistd.h>
 /*Being a genius to understand the simplicity of Unix Systems*/
 /**
- *
  * main - Entry Point
  *
  * Return: Always 1 (success)
- *
  */
 int main(void)
 {
