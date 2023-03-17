@@ -12,7 +12,7 @@ int main(void)
 
 	for (Lower = 'a'; Lower <= 'z'; Lower++)
 	{
-		if (Lower == 'p' || Lower == 'e')
+		if (Lower == 'q' || Lower == 'e')
 		{
 			;
 		} else
