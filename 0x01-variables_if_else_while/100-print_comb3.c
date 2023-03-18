@@ -19,12 +19,12 @@ int main(void)
 				
 				if ((i - p == 0) || (p > i))
 				{
-					putchar('0' + i);
 					if (i == p)
 					{
 						;
 					} else if (i != p)
 					{
+						putchar('0' + i);
 						putchar('0' + p);
 						if (i == 8 && p == 9)
 						{
