@@ -12,28 +12,27 @@ int main(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		if (i <= 8)
-		{
-			;
-		} else
-		{
-			;
-		}
 		for (p = 0; p <= 9; p++)
 		{
 			if (i <= 8)
 			{
+				putchar('0' + i);
 				if ((i - p == 0) || (p > i))
 				{
 					if (i == p)
 					{
 						;
-					} else
+					} else (i != p)
 					{
-						putchar('0' + i);
 						putchar('0' + p);
-						putchar(',');
-						putchar(' ');
+						if (i == 8 && p == 9)
+						{
+							;
+						} else
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				} else
 				{
