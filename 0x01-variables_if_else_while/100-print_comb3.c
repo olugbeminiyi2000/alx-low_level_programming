@@ -21,7 +21,7 @@ int main(void)
 		}
 		for (p = 0; p <= 9; p++)
 		{
-			putchar('0' + i)
+			putchar('0' + i);
 			if (i <= 8)
 			{
 				if ((i - p == 0) || (p > i))
