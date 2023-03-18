@@ -16,9 +16,10 @@ int main(void)
 		{
 			if (i <= 8)
 			{
-				putchar('0' + i);
+				
 				if ((i - p == 0) || (p > i))
 				{
+					putchar('0' + i);
 					if (i == p)
 					{
 						;
