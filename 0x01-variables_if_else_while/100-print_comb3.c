@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (i <= 8)
 		{
-			putchar(i);
+			putchar('0' + i);
 		} else
 		{
 			;
@@ -30,7 +30,7 @@ int main(void)
 						;
 					} else
 					{
-						putchar(p);
+						putchar('0' + p);
 						putchar(',');
 						putchar(' ');
 					}
