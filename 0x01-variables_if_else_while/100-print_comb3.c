@@ -14,13 +14,14 @@ int main(void)
 	{
 		if (i <= 8)
 		{
-			putchar('0' + i);
+			;
 		} else
 		{
 			;
 		}
 		for (p = 0; p <= 9; p++)
 		{
+			putchar('0' + i)
 			if (i <= 8)
 			{
 				if ((i - p == 0) || (p > i))
