@@ -22,7 +22,7 @@ int main(void)
 					if (i == p)
 					{
 						;
-					} else (i != p)
+					} else if (i != p)
 					{
 						putchar('0' + p);
 						if (i == 8 && p == 9)
