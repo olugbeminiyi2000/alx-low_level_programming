@@ -16,7 +16,6 @@ int main(void)
 		{
 			if (i <= 8)
 			{
-				
 				if ((i - p == 0) || (p > i))
 				{
 					if (i == p)
@@ -41,19 +40,7 @@ int main(void)
 				}
 			} else
 			{
-				if ((i - p == 0) || (p > i))
-				{
-					if (i == p)
-					{
-						;
-					} else
-					{
-						;
-					}
-				} else
-				{
-					;
-				}
+				;
 			}
 		}
 	}
