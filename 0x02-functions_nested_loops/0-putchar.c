@@ -9,6 +9,5 @@
 int main(void)
 {
 	write(STDOUT_FILENO, "_putchar\n", sizeof("_putchar\n"));
-	putchar('\n');
 	return (0);
 }
