@@ -8,10 +8,7 @@
  */
 int main(void)
 {
-	char message[] = "_putchar";
-	int num_of_bytes = sizeof(message);
-
-	write(STDOUT_FILENO, message, num_of_bytes);
+	write(STDOUT_FILENO, "_putchar\n", sizeof("_putchar\n"));
 	putchar('\n');
 	return (0);
 }
