@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <unistd.h>
-/*A program that prints _putchar, followed by a newline.*/
+#include "main.h"
+
+/*A function _putchar*/
 /**
- * main - Entry Point
+ * _putchar - Prints the string _putchar followed by a new line
  *
  * Return: Always 0 (success)
  */
-int main(void)
+int _putchar(void)
 {
 	putchar('_');
 	putchar('p');
@@ -17,5 +19,16 @@ int main(void)
 	putchar('a');
 	putchar('r');
 	putchar('\n');
+	return (0);
+}
+/*A program that prints _putchar  followed by a newline.*/
+/**
+ * main - Entry Point
+ *
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+	_putchar();
 	return (0);
 }
