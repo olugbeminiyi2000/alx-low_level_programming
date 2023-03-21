@@ -12,6 +12,7 @@ void print_alphabet_x10(void)
 	for (count = 0; count < 10; count++)
 	{
 		char Lower;
+
 		for (Lower = 'a'; Lower <= 'z'; Lower++)
 		{
 			_putchar(Lower);
