@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "0-putchar.h"
 /*A program that prints _putchar, followed by a newline.*/
 /**
  * main - Entry Point
