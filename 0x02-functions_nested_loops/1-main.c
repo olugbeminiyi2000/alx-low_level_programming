@@ -1,4 +1,4 @@
-#incude "main.h"
+#include "main.h"
 /*the main source file for 1-alphabets.c*/
 /**
  * main - Entry point taking in 1-alphabets.c function
