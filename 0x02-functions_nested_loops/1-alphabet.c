@@ -1,29 +1,17 @@
 #include <stdio.h>
 #include "main.h"
-/*A function that prints the alphabet, in lowercase*/
-/*followed by a new line*/
+/*The main header file contain all our prototypes of functions*/
+/*we are going to use including this function prototype*/
 /**
- * print_alphabet - A function that prints all lowercase letters
- *
- * Return: void
+ * print_alphabet - print all alphabet in lower case
  */
 void print_alphabet(void)
 {
-	char LOWER;
+	char Lower;
 
-	for (LOWER = 'a'; LOWER <= 'z'; LOWER++)
+	for (lower = 'a'; Lower <= 'z'; Lower++)
 	{
-		putchar(LOWER);
+		_putchar(Lower);
 	}
-	putchar('\n');
-}
-/**
- * main - Entry point
- *
- * Return: Always 0 (success)
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
+	_putchar('\n');
 }

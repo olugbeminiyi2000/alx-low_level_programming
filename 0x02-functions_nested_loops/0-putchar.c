@@ -1,34 +1,24 @@
-#include <stdio.h>
-#include <unistd.h>
 #include "main.h"
-
-/*A function _putchar*/
+/*this c source file prints _putchar*/
+/*It has no function a apart from the main function*/
+/* so no prototype for it  although it calls the main.h file*/
+/*also it is possible to use a function already defined somewhere*/
+/*as long as you have access to the prototype*/
 /**
- * _putchar - Prints the string _putchar followed by a new line
+ * main - prints _putchar
  *
- * Return: Always 0 (success)
- */
-int _putchar(void)
-{
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
-	return (0);
-}
-/*A program that prints _putchar  followed by a newline.*/
-/**
- * main - Entry Point
- *
- * Return: Always 0 (success)
+ * Return: Always 0 success
  */
 int main(void)
 {
-	_putchar();
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
