@@ -1,7 +1,7 @@
 #include "main.h"
 /*Write a function that prints the n times table, starting with 0.*/
 /**
- * prinnt_times_table - print all times table starting from 1-14
+ * print_times_table - print all times table starting from 1-14
  *
  * @n: the parameter of the function
  * Return: void but If n is greater than 15 or less than 0
@@ -39,7 +39,7 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar((k / 10) + '0');
+					_putchar((k / 100) + '0');
 					_putchar(((k / 10) % 10) + '0');
 					_putchar((k % 10) + '0');
 				}
