@@ -4,18 +4,18 @@
 /**
  * print_last_digit - function print last digit
  *
+ * @n: parameter n of the function
  * Return: Always retrun last digit
  */
 int print_last_digit(int n)
 {
-	int num;
+	int num = 10;
 	int value;
-	num = 10;
 
-	if (n < 0);
+	if (n < 0)
 	{
 		value = abs(n);
-	} else
+	} else if (n > 0)
 	{
 		value = n;
 	}
