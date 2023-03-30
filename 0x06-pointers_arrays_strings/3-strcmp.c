@@ -11,8 +11,24 @@ int _strcmp(char *s1, char *s2)
 {
 	int ascii_1;
 	int ascii_2;
+	int i = 0;
+	int length_1 = strlen(s1);
+	int length_2 = strlen(s2);
 
-	ascii_1 = (int)*s1;
-	ascii_2 = (int)*s2;
+	while (i < length_1 || i < length_2)
+	{
+		ascii_1 = (int)*s1;
+		ascii_2 = (int)*s2;
+		if (ascii_1 == ascii_2)
+		{
+			s1++;
+			s2++;
+			i++;
+			continue;
+		} else if (ascii_1 < ascii_2 || ascii_1 > ascii_2)
+		{
+			break;
+		}
+	}
 	return (ascii_1 - ascii_2);
 }
