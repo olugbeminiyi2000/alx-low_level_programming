@@ -12,14 +12,18 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int length_1 = strlen(dest);
 	int length_2 = n / sizeof(src[0]);
+	int length_3 = strlen(src);
 	int index;
 	int i;
 
 	for (i = 0; i < length_2; i++)
 	{
-		index = length_1 + i;
-		dest[index] = *src;
-		src++;
+		if (i <= length_3)
+		{
+			index = length_1 + i;
+			dest[index] = *src;
+			src++;
+		}
 	}
 	return (dest);
 }
