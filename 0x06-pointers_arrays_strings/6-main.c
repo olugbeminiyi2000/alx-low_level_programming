@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	char str[] = "Expect the best. Prepare for the worst. Capitalize on what \n"
-		"comes.\nhello world! hello-world 0123456hello world\t"
+	char str[] = "Expect the best. Prepare for the worst.Capitalize on what \n"
+		"comes.\nhello world! hello-world0123456hello world\t"
 		"hello world.hello world\n";
 	char *ptr;
 
