@@ -13,10 +13,11 @@ char *_strncpy(char *dest, char *src, int n)
 	int n_bytes_len = n / sizeof(src[0]);
 	int i;
 	int length_src = strlen(src);
+	int length_dest = strlen(dest);
 
 	for (i = 0; i < n_bytes_len; i++)
 	{
-		if (i <= length_src)
+		if (i <= length_src && i < length_dest)
 		{
 			dest[i] = *src;
 			src++;
