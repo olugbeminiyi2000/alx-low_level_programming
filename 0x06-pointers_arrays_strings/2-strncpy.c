@@ -10,18 +10,19 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int n_bytes_len = n / sizeof(src[0]);
-	int i;
-	int length_src = strlen(src);
-	int length_dest = strlen(dest);
+	int index = 0, src_len = 0;
 
-	for (i = 0; i < n_bytes_len; i++)
+	while (src[index++])
 	{
-		if (i <= (length_src - 1) && i <= length_dest)
-		{
-			dest[i] = *src;
-			src++;
-		}
+		src_len++;
+	}
+	for (index = 0; src[index] && index < n; index++)
+	{
+		dest[index] = src[index];
+	}
+	for (index = src_len; index < n; index++)
+	{
+		dest[index] = '\0';
 	}
 	return (dest);
 }
