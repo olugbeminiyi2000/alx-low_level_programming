@@ -9,6 +9,13 @@
  */
 int main(int argc, __attribute__((unused)) char **argv)
 {
-	printf("%d\n", argc);
+	int sum = 0;
+	int i;
+
+	for (i = 1; i < argc &&  argc > 1; i++)
+	{
+		sum++;
+	}
+	printf("%d\n", sum);
 	return (0);
 }
