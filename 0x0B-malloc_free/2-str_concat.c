@@ -13,8 +13,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		s1 = "";
-		s2 = "";
+		if (s1 == NULL)
+		{
+			s1 = (char *)malloc(1);
+			*s1 = '\0';
+		}
+		s2 = (char *)malloc(1);
+		*s2 = '\0';
 	}
 	ls1 = strlen(s1);
 	ls2 = strlen(s2) + 1;
