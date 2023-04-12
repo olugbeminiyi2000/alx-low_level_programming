@@ -1,10 +1,10 @@
 #include "main.h"
-/*a function that splits a string into words.*/
+/*function that splits a string into words.*/
 /**
- * word_len - locates the index marking the end of the 
- * first word contained within the a string
+ * word_len - locates the index marking the end of the
+ *            first word contained within the a string
  * @str: the string to be searched
- * Returnr: the index marking the end of the  initial word pointed to
+ * Return: the index marking the end of the  initial word pointed to by str.
  */
 int word_len(char *str)
 {
@@ -39,10 +39,11 @@ int count_words(char *str)
 			index += word_len(str + index);
 		}
 	}
+	return (words);
 }
 
 #include "main.h"
-/*a function that splits a string into words.*/
+/*function that splits a string into words.*/
 /**
  * strtow - function
  * @str: parameter
@@ -50,8 +51,8 @@ int count_words(char *str)
  */
 char **strtow(char *str)
 {
-	char **string;
-	int index = 0, words, w, letter, l;
+	char **strings;
+	int index = 0, words, w, letters, l;
 
 	if (str == NULL || str[0] == '\0')
 	{
@@ -67,4 +68,26 @@ char **strtow(char *str)
 	{
 		return (NULL);
 	}
+	for (w = 0; w < words; w++)
+	{
+		while (str[index] == ' ')
+			index++;
+		letters = word_len(str + index);
+		strings[w] = malloc(sizeof(char) * (letters + 1));
+		if (strings[w] == NULL)
+		{
+			for (; w >= 0; w--)
+			{
+				free(strings[w]);
+				return (NULL);
+			}
+		}
+		for (l = 0; l < letters; l++)
+		{
+			strings[w][l] = str[index++];
+		}
+		strings[w][l] = '\0';
+	}
+	strings[w] = NULL;
+	return (strings);
 }
