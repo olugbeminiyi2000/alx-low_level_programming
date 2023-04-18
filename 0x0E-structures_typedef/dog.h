@@ -3,7 +3,8 @@
 
 /*Define a new type struct dog with the following elements:*/
 /**
- * struct dog - Our structure
+ * struct dog - Our old data-type
+ * dog_t - Our typedef data-type
  *
  * @name: first member or instance variable
  * @age: second member or second variable
@@ -11,12 +12,12 @@
  *
  * Description: first description
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 #endif
