@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "main.h"
+#include "variadic_functions.h"
 /*a function that returns a value*/
 /**
  * _putchar - writes the character c to stdout
