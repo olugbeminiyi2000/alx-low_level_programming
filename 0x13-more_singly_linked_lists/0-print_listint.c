@@ -13,7 +13,6 @@ size_t print_listint(const listint_t *h)
 
 	if (h == NULL)
 	{
-		printf("Linked list empty\n");
 		return (0);
 	}
 	for (; h != NULL;)
