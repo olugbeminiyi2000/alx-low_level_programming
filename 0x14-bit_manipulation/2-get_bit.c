@@ -18,6 +18,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	for (i = num_bits - 1; i >= 0; i--)
 	{
 		unsigned int j = i;
+
 		if (j == index)
 		{
 			if ((n >> j) & 1)
